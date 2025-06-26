@@ -1,14 +1,23 @@
 {
+<<<<<<< HEAD
   "name": "birthday-nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+=======
+  "name": "happy-birthday-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+>>>>>>> fb8e085f20ece21e2cd5e33746937a416f4667ce
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "gsap": "^3.13.0",
     "next": "15.3.4",
     "react": "^19.0.0",
@@ -26,3 +35,23 @@
     "typescript": "^5"
   }
 }
+=======
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "gsap": "^3.12.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "typescript": "^5"
+  },
+  "optionalDependencies": {
+    "@next/swc-linux-x64-gnu": "14.0.4",
+    "@next/swc-linux-x64-musl": "14.0.4"
+  }
+}
+>>>>>>> fb8e085f20ece21e2cd5e33746937a416f4667ce
