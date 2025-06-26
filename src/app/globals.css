@@ -1,10 +1,14 @@
-html {
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400');
+
+* {
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
+  padding: 0;
   font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -124,15 +128,24 @@ body {
 
 .six .hat {
   position: absolute;
-  width: 80px;
+  width: 80px !important;
+  height: 80px !important;
   top: -35px;
   left: 41.5%;
-  /* transform: scale(0.1); */
+}
+
+.six .lydia-dp {
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .baloons img {
   display: inline-block;
   position: absolute;
+  width: 50px !important;
+  height: 100px !important;
 }
 
 .baloons img:nth-child(even) {
@@ -230,6 +243,11 @@ body {
 #replay {
   z-index: 3;
   cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#replay:hover {
+  color: #ff69b4;
 }
 
 /* Media Queries */
@@ -280,8 +298,14 @@ body {
   }
 
   .six .hat {
-    width: 50px;
+    width: 50px !important;
+    height: 50px !important;
     top: -20px;
+  }
+
+  .six .lydia-dp {
+    width: 150px !important;
+    height: 150px !important;
   }
 
   .wish-hbd {
@@ -296,4 +320,43 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
   }
+
+  .one {
+    font-size: 3rem;
+  }
+
+  .three {
+    font-size: 2rem;
+  }
+
+  .five p {
+    font-size: 1.5rem;
+  }
 }
+
+@media screen and (max-width: 320px) {
+  .one {
+    font-size: 2.5rem;
+  }
+
+  .three {
+    font-size: 1.8rem;
+  }
+
+  .five p {
+    font-size: 1.2rem;
+  }
+
+  .idea-6 span {
+    font-size: 8rem;
+  }
+
+  .wish-hbd {
+    font-size: 1.8em;
+  }
+
+  .wish h5 {
+    font-size: 1.2rem;
+  }
+}
+
