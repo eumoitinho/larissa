@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Feliz Aniversário Larissa! 🎉',
-  description: 'Uma animação especial de aniversário feita com carinho',
+  title: 'Happy Birthday!!! :)',
+  description: 'A special birthday animation made with Next.js',
   icons: {
     icon: '/img/favicon.png',
   },
@@ -15,8 +15,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR">
+    <html lang="en">
       <body>{children}</body>
     </html>
   )
 }
+

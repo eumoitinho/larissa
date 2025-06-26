@@ -9,34 +9,27 @@ export default function BirthdayPage() {
   const timelineRef = useRef<gsap.core.Timeline | null>(null);
 
   const customizeData = {
-    greeting: "Oi",
-    name: "Larissa",
-    greetingText: "Mesmo estando a 550km de distância...",
-    text1: "É seu aniversário!!! 🎉",
-    textInChatBox: "Feliz aniversário pra você!! Yeee! Muitas felicidades e...",
-    sendButtonLabel: "Enviar",
-    text2: "Eu ia mandar uma mensagem normal.",
-    text3: "Mas aí eu parei.",
-    text4: "Pensei: vou fazer algo",
-    text4Adjective: "especial",
-    text5Entry: "Porque,",
-    text5Content: "Você é Especial",
-    friendsQuote: "\"Could this BE any more special?\"",
-    friendsReference: "- Chandler Bing vibes 😄",
-    distanceText: "550km não são nada quando se trata de amizade!",
-    curitibaText: "De Curitiba",
-    presidenteText: "Para Presidente Venceslau",
-    heartText: "Com muito carinho ❤️",
+    greeting: "Hey",
+    name: "Lydia",
+    greetingText: "I really like your name btw!",
+    text1: "It's your birthday!!! :D",
+    textInChatBox: "Happy birthday to you!! Yeee! Many many happy blah...",
+    sendButtonLabel: "Send",
+    text2: "That's what I was going to do.",
+    text3: "But then I stopped.",
+    text4: "I realised, I wanted to do something",
+    text4Adjective: "special",
+    text5Entry: "Because,",
+    text5Content: "You are Special",
     smiley: ":)",
-    bigTextPart1: "L",
-    bigTextPart2: "A",
+    bigTextPart1: "S",
+    bigTextPart2: "O",
     imagePath: "/img/lydia2.png",
-    wishHeading: "Feliz Aniversário!",
-    wishText: "Que este novo ano seja repleto de alegrias, como os episódios de Friends! 📺✨",
-    centralPerkText: "\"I'll be there for you... even 550km away!\" 🎵",
-    outroText: "Espero que tenha gostado dessa surprisinha!",
-    replayText: "Clique aqui se quiser assistir novamente.",
-    outroSmiley: "😊"
+    wishHeading: "Happy Birthday!",
+    wishText: "May the js.prototypes always be with you! ;)",
+    outroText: "Okay, now come back and tell me if you liked it.",
+    replayText: "Or click, if you want to watch it again.",
+    outroSmiley: ":)"
   };
 
   const animationTimeline = () => {
@@ -94,7 +87,7 @@ export default function BirthdayPage() {
           opacity: 0,
           y: 10
         },
-        "+=3"
+        "+=2.5"
       )
       .to(
         ".two",
@@ -161,43 +154,6 @@ export default function BirthdayPage() {
       .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
       .from(".idea-4", 0.7, ideaTextTrans)
       .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
-      // Nova etapa: Friends quote
-      .from(".friends-quote", 0.7, {
-        opacity: 0,
-        scale: 0.5,
-        rotation: -10
-      })
-      .from(".friends-reference", 0.5, {
-        opacity: 0,
-        y: 20
-      }, "-=0.3")
-      .to(".friends-quote", 0.7, ideaTextTransLeave, "+=2")
-      .to(".friends-reference", 0.7, ideaTextTransLeave, "-=0.7")
-      // Nova etapa: Distância
-      .from(".distance-text", 0.7, {
-        opacity: 0,
-        x: -100
-      })
-      .to(".distance-text", 0.7, ideaTextTransLeave, "+=2")
-      // Nova etapa: Cidades
-      .from(".curitiba-text", 0.7, {
-        opacity: 0,
-        x: -200,
-        color: "#ff6b6b"
-      })
-      .from(".presidente-text", 0.7, {
-        opacity: 0,
-        x: 200,
-        color: "#4ecdc4"
-      }, "-=0.3")
-      .from(".heart-text", 0.7, {
-        opacity: 0,
-        scale: 0.3,
-        rotation: 360
-      }, "-=0.3")
-      .to(".curitiba-text", 0.7, ideaTextTransLeave, "+=2")
-      .to(".presidente-text", 0.7, ideaTextTransLeave, "-=0.7")
-      .to(".heart-text", 0.7, ideaTextTransLeave, "-=0.7")
       .from(
         ".idea-5",
         0.7,
@@ -321,20 +277,6 @@ export default function BirthdayPage() {
         },
         "party"
       )
-      // Nova etapa: Central Perk reference
-      .from(".central-perk", 0.7, {
-        opacity: 0,
-        scale: 0.8,
-        y: 30
-      }, "+=1")
-      .to(".central-perk", 0.5, {
-        color: "#f39c12",
-        scale: 1.1
-      }, "+=1")
-      .to(".central-perk", 0.5, {
-        color: "#2c3e50",
-        scale: 1
-      })
       .staggerTo(
         ".eight svg",
         1.5,
@@ -352,10 +294,6 @@ export default function BirthdayPage() {
         y: 30,
         zIndex: "-1"
       })
-      .to(".central-perk", 0.5, {
-        opacity: 0,
-        y: 30
-      }, "-=0.5")
       .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
       .to(
         ".last-smile",
@@ -374,6 +312,7 @@ export default function BirthdayPage() {
   };
 
   useEffect(() => {
+    // Start animation after component mounts
     const timer = setTimeout(() => {
       animationTimeline();
     }, 100);
@@ -410,31 +349,6 @@ export default function BirthdayPage() {
           <strong>{customizeData.text4Adjective}</strong>.
         </p>
         <p className="idea-4">{customizeData.text5Entry}</p>
-        
-        {/* Nova etapa: Friends quote */}
-        <p className="friends-quote" style={{ fontSize: '2.2rem', fontStyle: 'italic', color: '#e74c3c' }}>
-          {customizeData.friendsQuote}
-        </p>
-        <p className="friends-reference" style={{ fontSize: '1.5rem', color: '#7f8c8d' }}>
-          {customizeData.friendsReference}
-        </p>
-        
-        {/* Nova etapa: Distância */}
-        <p className="distance-text" style={{ fontSize: '2rem', color: '#3498db', fontWeight: 'bold' }}>
-          {customizeData.distanceText}
-        </p>
-        
-        {/* Nova etapa: Cidades */}
-        <p className="curitiba-text" style={{ fontSize: '1.8rem', fontWeight: 'bold' }}>
-          {customizeData.curitibaText}
-        </p>
-        <p className="presidente-text" style={{ fontSize: '1.8rem', fontWeight: 'bold' }}>
-          {customizeData.presidenteText}
-        </p>
-        <p className="heart-text" style={{ fontSize: '2.5rem', color: '#e91e63' }}>
-          {customizeData.heartText}
-        </p>
-        
         <p className="idea-5">
           <span>{customizeData.text5Content}</span>{' '}
           <span className="smiley">{customizeData.smiley}</span>
@@ -448,14 +362,14 @@ export default function BirthdayPage() {
       <div className="six">
         <Image 
           src={customizeData.imagePath} 
-          alt="Larissa" 
+          alt="Birthday person" 
           className="lydia-dp"
           width={200}
           height={200}
         />
         <Image 
           src="/img/hat.svg" 
-          alt="Chapéu de festa" 
+          alt="Party hat" 
           className="hat"
           width={80}
           height={80}
@@ -464,17 +378,6 @@ export default function BirthdayPage() {
           <h3 className="wish-hbd">{customizeData.wishHeading}</h3>
           <h5>{customizeData.wishText}</h5>
         </div>
-        
-        {/* Nova etapa: Central Perk reference */}
-        <p className="central-perk" style={{ 
-          fontSize: '1.8rem', 
-          fontStyle: 'italic', 
-          marginTop: '20px',
-          textAlign: 'center',
-          color: '#2c3e50'
-        }}>
-          {customizeData.centralPerkText}
-        </p>
       </div>
 
       <div className="seven">
@@ -485,7 +388,7 @@ export default function BirthdayPage() {
               <Image
                 key={i}
                 src={`/img/ballon${balloonType}.svg`}
-                alt={`Balão ${balloonType}`}
+                alt={`Balloon ${balloonType}`}
                 width={50}
                 height={100}
               />
@@ -512,3 +415,4 @@ export default function BirthdayPage() {
     </div>
   );
 }
+
