@@ -250,6 +250,41 @@ html, body {
   color: #ff69b4;
 }
 
+/* Estilos para as novas etapas */
+.friends-quote {
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.distance-text {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.curitiba-text, .presidente-text {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.heart-text {
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.central-perk {
+  background: linear-gradient(45deg, #f39c12, #e74c3c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Courier New', monospace;
+}
+
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
@@ -332,6 +367,26 @@ html, body {
   .five p {
     font-size: 1.5rem;
   }
+
+  .friends-quote {
+    font-size: 1.8rem !important;
+  }
+
+  .distance-text {
+    font-size: 1.6rem !important;
+  }
+
+  .curitiba-text, .presidente-text {
+    font-size: 1.4rem !important;
+  }
+
+  .heart-text {
+    font-size: 2rem !important;
+  }
+
+  .central-perk {
+    font-size: 1.4rem !important;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -358,5 +413,24 @@ html, body {
   .wish h5 {
     font-size: 1.2rem;
   }
-}
 
+  .friends-quote {
+    font-size: 1.4rem !important;
+  }
+
+  .distance-text {
+    font-size: 1.2rem !important;
+  }
+
+  .curitiba-text, .presidente-text {
+    font-size: 1.1rem !important;
+  }
+
+  .heart-text {
+    font-size: 1.8rem !important;
+  }
+
+  .central-perk {
+    font-size: 1.2rem !important;
+  }
+}
