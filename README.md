@@ -1,73 +1,17 @@
-# 🎉 Birthday Animation - Next.js
+# Projeto-Netflix
 
-Uma animação interativa de aniversário criada com Next.js, TypeScript e GSAP.
+## Propósito
 
-## 🚀 Características
+Nesse projeto meu próposito era recriar um clone da Netflix com a intenção de fazer uma surpresa para minha namorada como presente de um ano de namoro.
 
-- ✨ Animações suaves com GSAP
-- 📱 Design responsivo
-- 🎨 Interface moderna e interativa
-- 🔄 Botão de replay para repetir a animação
-- 🖼️ Imagens otimizadas com Next.js Image
+## Idealização
 
-## 🛠️ Tecnologias Utilizadas
+Tive a ideía após ver um vídeo onde um programador fez a mesma coisa, então comecei a fazer rascunhos em um caderno.
 
-- **Next.js 15** - Framework React
-- **TypeScript** - Tipagem estática
-- **GSAP** - Biblioteca de animação
-- **CSS3** - Estilos e responsividade
-- **Google Fonts** - Tipografia (Work Sans)
+## Construção
 
-## 📦 Instalação
+Fiz esse projeto do zero, programação e idealização foi feito por mim, as imagens foram retiradas da internet.
 
-1. Clone o repositório
-2. Instale as dependências:
-   ```bash
-   npm install
-   ```
+Demorei cerca de 3 dias, começando no sábado de manhã e terminando na segunda á noite.
 
-3. Execute o projeto em modo de desenvolvimento:
-   ```bash
-   npm run dev
-   ```
-
-4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador
-
-## 🎯 Como Usar
-
-1. A animação inicia automaticamente quando a página carrega
-2. Aguarde a sequência completa de animações
-3. Clique em "Or click, if you want to watch it again." para repetir
-
-## 📱 Responsividade
-
-O projeto é totalmente responsivo e funciona em:
-- 💻 Desktop
-- 📱 Mobile
-- 📟 Tablet
-
-## 🎨 Personalização
-
-Para personalizar o conteúdo, edite o objeto `customizeData` no arquivo `src/app/page.tsx`:
-
-```typescript
-const customizeData = {
-  greeting: "Hey",
-  name: "Lydia",
-  greetingText: "I really like your name btw!",
-  // ... outros campos
-};
-```
-
-## 🚀 Deploy
-
-Para fazer o deploy do projeto:
-
-```bash
-npm run build
-npm start
-```
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT.
+Foi usado vscode para ser feito o site.
