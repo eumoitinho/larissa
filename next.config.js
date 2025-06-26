@@ -4,7 +4,11 @@ const nextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
-  }
+  },
+  experimental: {
+    forceSwcTransforms: true,
+  },
+  swcMinify: false,
 }
 
 module.exports = nextConfig
