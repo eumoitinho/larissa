@@ -121,8 +121,8 @@ export default function BirthdayPage() {
       })
       .staggerTo(
         ".hbd-chatbox span",
-        0.5,
         {
+          duration: 0.5,
           visibility: "visible"
         },
         0.05
@@ -198,8 +198,8 @@ export default function BirthdayPage() {
       )
       .staggerTo(
         ".idea-6 span",
-        0.8,
         {
+          duration: 0.8,
           scale: 3,
           opacity: 0,
           rotation: -15,
@@ -210,12 +210,12 @@ export default function BirthdayPage() {
       )
       .staggerFromTo(
         ".baloons img",
-        2.5,
         {
           opacity: 0.9,
           y: 1400
         },
         {
+          duration: 2.5,
           opacity: 1,
           y: -1000
         },
@@ -253,12 +253,12 @@ export default function BirthdayPage() {
       )
       .staggerFromTo(
         ".wish-hbd span",
-        0.7,
         {
           scale: 1.4,
           rotationY: 150
         },
         {
+          duration: 0.7,
           scale: 1,
           rotationY: 0,
           color: "#ff69b4",
@@ -279,8 +279,8 @@ export default function BirthdayPage() {
       )
       .staggerTo(
         ".eight svg",
-        1.5,
         {
+          duration: 1.5,
           visibility: "visible",
           opacity: 0,
           scale: 80,
@@ -415,4 +415,3 @@ export default function BirthdayPage() {
     </div>
   );
 }
-
