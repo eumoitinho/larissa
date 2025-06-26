@@ -8,8 +8,8 @@ const workSans = Work_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Happy Birthday!!! :)',
-  description: 'An animated birthday wish page',
+  title: 'Feliz Aniversário!!! :)',
+  description: 'Uma página animada de parabéns',
   icons: {
     icon: '/img/favicon.png',
   },
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={workSans.className}>{children}</body>
     </html>
   )

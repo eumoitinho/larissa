@@ -29,26 +29,26 @@ interface CustomizeData {
 }
 
 const customizeData: CustomizeData = {
-  greeting: "Hiya",
+  greeting: "Olá",
   name: "Lydia",
-  greetingText: "I really like your name btw!",
-  wishText: "May the js.prototypes always be with you! ;)",
+  greetingText: "Eu realmente gosto do seu nome!",
+  wishText: "Que os js.prototypes estejam sempre com você! ;)",
   imagePath: "/img/lydia2.png",
-  text1: "It's your birthday!!! :D",
-  textInChatBox: "Happy birthday to you!! Yeee! Many many happy blah...",
-  sendButtonLabel: "Send",
-  text2: "That's what I was going to do.",
-  text3: "But then I stopped.",
-  text4: "I realised, I wanted to do something",
-  text4Adjective: "special",
-  text5Entry: "Because,",
-  text5Content: "You are Special",
+  text1: "É seu aniversário!!! :D",
+  textInChatBox: "Feliz aniversário para você!! Eeee! Muitos e muitos parabéns...",
+  sendButtonLabel: "Enviar",
+  text2: "Era isso que eu ia fazer.",
+  text3: "Mas então eu parei.",
+  text4: "Eu percebi que queria fazer algo",
+  text4Adjective: "especial",
+  text5Entry: "Porque,",
+  text5Content: "Você é Especial",
   smiley: ":)",
-  bigTextPart1: "S",
-  bigTextPart2: "O",
-  wishHeading: "Happy Birthday!",
-  outroText: "Okay, now come back and tell me if you liked it.",
-  replayText: "Or click, if you want to watch it again.",
+  bigTextPart1: "E",
+  bigTextPart2: "S",
+  wishHeading: "Feliz Aniversário!",
+  outroText: "Agora volte aqui e me diga se você gostou.",
+  replayText: "Ou clique aqui se quiser assistir novamente.",
   outroSmiley: ":)"
 }
 
@@ -389,7 +389,7 @@ export default function Home() {
       <div className="six">
         <Image 
           src={customizeData.imagePath} 
-          alt="Profile" 
+          alt="Perfil" 
           className="lydia-dp" 
           width={200} 
           height={200}
@@ -397,7 +397,7 @@ export default function Home() {
         />
         <Image 
           src="/img/hat.svg" 
-          alt="Hat" 
+          alt="Chapéu" 
           className="hat" 
           width={80} 
           height={80}
@@ -415,7 +415,7 @@ export default function Home() {
             <Image
               key={i}
               src={`/img/ballon${((i % 3) + 1)}.svg`}
-              alt="Balloon"
+              alt="Balão"
               width={50}
               height={100}
               unoptimized
