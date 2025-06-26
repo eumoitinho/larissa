@@ -21,5 +21,9 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "typescript": "^5"
+  },
+  "optionalDependencies": {
+    "@next/swc-linux-x64-gnu": "14.0.4",
+    "@next/swc-linux-x64-musl": "14.0.4"
   }
 }
